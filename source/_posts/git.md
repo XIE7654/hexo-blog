@@ -51,3 +51,8 @@ git remote add origin git@github.com:XIE7654/XIE7654.git
 ``` bash
 git push -u origin master
 ```
+
+### mac remote: Permission
+```bash
+git config credential.username XIE7654
+```
