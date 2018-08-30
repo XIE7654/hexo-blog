@@ -11,6 +11,8 @@ git config core.autocrlf false
 git add ./
 ```
 
+
+
 ### 移除已经添加的文件（缓存区）
 ``` bash
 使用 git rm 命令即可，有两种选择,
