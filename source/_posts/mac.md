@@ -9,8 +9,6 @@ tags:
 lsof -i tcp:3000
 ```
 
-
-
 关闭端口
 ``` bash
 kill -9 6806(查到的PID号)
