@@ -20,3 +20,14 @@ tags:
 #kill -9 [PID]
 -9 表示强迫进程立即停止
 ```
+
+
+安装Anaconda3
+```bash
+wget https://repo.continuum.io/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+```
+
+使环境变量生效
+```bash
+source ~/.bashrc
+```
