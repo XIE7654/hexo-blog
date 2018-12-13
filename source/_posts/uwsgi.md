@@ -15,6 +15,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 python manage.py collectstatic
 ```
 
+停止uwsgi
+```
+sudo pkill -f uwsgi -9
+```
+
 uwsgi 配置文件
 [uwsgi]
 #//path/to/your
@@ -32,12 +37,11 @@ pidfile=/etc/uwsgi/pg.pid
 
 
 nginx配置文件
-
+```
 upstream django {
    # server unix:///path/to/your/pg/pg.sock; # for a file socket
     server unix:///home/pg/pg.sock; # for a file socket
 }
-
 # configuration of the server
 server {
     # the port your site will be served on
@@ -71,3 +75,4 @@ server {
     #    include     /home/pg/uwsgi_params; # the uwsgi_params file you installed
     #}
 }
+```
