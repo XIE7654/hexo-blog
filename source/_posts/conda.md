@@ -14,7 +14,11 @@ vi ~/.bashrc
 source ~/.bashrc
 
 ```
+# 查看环境
+conda info -e
+```
 
+```
 # 创建一个名为python34的环境，指定python版本为3.4
 ```
 conda create --name python34 python=3.4
@@ -22,8 +26,15 @@ conda create --name python34 python=3.4
 
 # 切换环境
 ```
-deactivate python34 # for Windows
-source deactivate python34 # for Linux & Mac
+activate python34 # for Windows
+source activate python34 # for Linux & Mac
+
+
+```
+退出环境
+source deactivate
+```
+
 ```
 
 # 删除环境
