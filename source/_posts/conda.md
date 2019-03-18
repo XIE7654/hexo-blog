@@ -47,3 +47,16 @@ conda remove --name python34 --all
 ```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 ```
+
+# 修改默认环境
+
+在linux下，通过修改~/.bashrc或~/.bash_profile最后你会发现
+```
+export PATH="~/anaconda3/bin:$PATH"
+```
+
+修改为
+```
+export PATH="~/anacond3/envs/python3/bin:$PATH"
+
+```
