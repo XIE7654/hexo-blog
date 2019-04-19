@@ -10,10 +10,17 @@ tags:
 ```
 wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
 bash Anaconda3-4.4.0-Linux-x86_64.sh
-vi ~/.bashrc
-source ~/.bashrc
-
 ```
+# 如果在安装的过程中输入了yes，应该就直接安装成功了，不用再看下面的内容
+# 关于手动修改环境变量：
+```
+vi ~/.bashrc
+```
+# 在bashrc文件的最后添加：export PATH="/home/用户名/anaconda3/bin:$PATH"。（vi编辑器中按i进入编辑模式）
+```
+source ~/.bashrc
+```
+
 # 查看环境
 conda info -e
 ```
