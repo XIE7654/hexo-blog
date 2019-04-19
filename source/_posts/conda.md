@@ -35,15 +35,9 @@ conda create --name python34 python=3.4
 ```
 activate python34 # for Windows
 source activate python34 # for Linux & Mac
-
-
 ```
-退出环境
-source deactivate
-```
-
-```
-
+# 退出环境
+# source deactivate
 # 删除环境
 ```
 conda remove --name python34 --all
